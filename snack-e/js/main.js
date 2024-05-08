@@ -2,6 +2,7 @@
 
 const arrayA = ["uova", "latte", "estathè", "taralli", "miele", "cereali"];
 
+// Removing the first element of the array
 function rimuoviDallaTesta(arr){
 
     if (arr.length === 0) return "Non ci sono elementi";

@@ -2,6 +2,7 @@
 
 const arrayA = ["uova", "latte", "estathè", "taralli", "miele", "cereali"];
 
+// Removing the last element of the array
 function rimuoviDallaCoda(arr){
 
     if (arr.length === 0) return "Non ci sono elementi";

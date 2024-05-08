@@ -3,6 +3,7 @@
 const arrayA = ["uova", "latte", "estathè", "taralli", "miele"];
 const element = "cereali";
 
+// Inserting an element at the beginning of the array
 function inserisciInTesta(arr, word){
     const arrB = [];
     arrB.push(word);
