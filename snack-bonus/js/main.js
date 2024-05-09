@@ -5,10 +5,12 @@ const element = "cereali";
 
 // Inserting an element at the beginning of the array
 function inserisciInTesta(arr, word){
-    const arrB = [];
-    arrB.push(word);
-    for (let i = 0; i < arr.length; i++){
-        arrB.push(arr[i]);
+
+    const arrB = [word];
+    const arrLength = arr.length;
+
+    for (let i = 0; i < arrLength; i++){
+        arrB[i+1] = arr[i];
     }
     return arrB;
 }

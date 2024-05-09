@@ -1,24 +1,21 @@
 "use strict";
 
 const array = ["uova", "latte", "estathè", "taralli", "miele", "cereali"];
-const element = "latte";
+const element = "miele";
 
 // Finding index of an element 
 function trovaIndice(arr, word){
 
-    let check = false;
-    let position;
-
-    for (let i = 0; i < arr.length; i++){
-        if (word === arr[i]){
-            check = true
-            position = i
-        }
+    const arrLength = arr.length;
+    let i = 0;
+    while (i < arrLength && arr[i] !== word){
+        i++;
     }
 
-    if (check == false) return -1
-    return position
-
+    if (i === arrLength){
+        return -1;
+    }
+    return i;
 }
 
-console.log(`La parola "${element}" si trova in posizione ${trovaIndice(array, element)} dell'array`)
+console.log(`La parola "${element}" si trova in posizione ${trovaIndice(array, element)} dell'array`);
